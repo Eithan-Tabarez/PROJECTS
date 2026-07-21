@@ -35,7 +35,6 @@ body {
     radial-gradient(circle at bottom right, #7d4dff20, transparent 30%),
     var(--bg);
   color: var(--white);
-  line-height: 1.7;
 }
 
 /* HEADER */
@@ -56,7 +55,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
 /* ESCONDER EL FIGCAPTION DEL LOGO */
-header figure figcaption{
+.header figure figcaption{
     display: none;
 }
 .header h1 {
