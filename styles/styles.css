@@ -124,6 +124,12 @@ header figure figcaption{
 display:grid;
 grid-template-columns:1fr;
 gap:20px;
+width:100%;
+}
+.projects-grid > *{
+    background:var(--bg-card);
+    padding:30px;
+    border-radius:20px;
 }
 /* SECCIONES */
 .section{
@@ -166,6 +172,9 @@ gap:20px;
 
 .figure img {
   max-width: 100%;
+  height:auto;
+  display:block;
+  margin:auto;
   border-radius: 20px;
   box-shadow: var(--shadow);
   transition: .4s;
@@ -364,8 +373,7 @@ flex-direction:row;
 .main{
 grid-template-areas:
 "sobre sobre"
-"proyectos" 
-"video";
+"proyectos video";
 grid-template-columns:2fr 1fr;
 }
 .projects-grid{
@@ -373,4 +381,17 @@ grid-template-columns:2fr 1fr;
   grid-template-columns:  1fr 1fr;
   gap:20px;
 }
+}
+.project-card{
+  display:block;
+  background:var(--bg-card-hover);
+  padding:20px;
+  border-radius:20px;
+  text-decoration:none;
+  color:var(--white);
+  transition:.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-5px);
 }
