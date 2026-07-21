@@ -323,6 +323,8 @@ a {
   }
  .logo{
     width: 50px;
+    display: flex;
+  
   }
   .nav {
     justify-content: center;
