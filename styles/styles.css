@@ -4,7 +4,6 @@
 /* VARIABLES */
 :root {
   --bg: #0f0f12;
-  --bg-card: #1a1a22;
   --bg-card-hover: #242430;
   --pink: #ff4fa3;
   --orange: #ff9b42;
@@ -133,7 +132,7 @@ width:100%;
 /* SECCIONES */
 .section{
   /*display:flex;*/
-  flex-direction:column;
+  flex-direction:center;
   align-items:center;
   gap:30px;
   padding:40px;
@@ -215,6 +214,7 @@ p {
 /* LISTAS */
 ul {
   padding-left: 25px;
+  list-style: none;
 }
 
 li {
@@ -251,7 +251,7 @@ a {
 /* BOTON */
 .button {
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px;
   padding: 12px 24px;
 
   background: linear-gradient(45deg, var(--pink), var(--orange));
@@ -403,13 +403,12 @@ grid-template-columns:2fr 1fr;
 .projects-grid{
   display:grid;
   grid-template-columns:  1fr 1fr;
-  gap:20px;
+  gap: 20px;
 }
 }
 .project-card{
   display:block;
-  background:var(--bg-card-hover);
-  padding:20px;
+  background: linear-gradient(45deg, var(--pink), var(--orange));  padding:20px;
   border-radius:20px;
   text-decoration:none;
   color:var(--white);
